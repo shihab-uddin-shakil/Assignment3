@@ -1,17 +1,10 @@
-var name= prompt("Enter  Name:"); 
-// var name = ["yakov", "john", "smith","jabin"];
-// namec=name[0].split("");
-// namec=name[1].split("");
-// namec=name[2].split("");
-// namec=name[3].split("");
-
-// for (var index = 0; index < name.length; index++) {
-    
-var namec=name.split("");
-if (namec[0]=="J" || namec[0]=="j") {
-    console.log("Goodby  "+name);
-    
-} else {
-    console.log("Hello  "+name);
-    // document.getElementById(name).innerHTML="Hello"+name;
+// var name= prompt("Enter  Name:"); 
+var names=["Yaakov","John","Jen","Jason","Paul","Frank","Larry","Paula","Laura","Jim"];
+for (var name in names){
+	if (names[name].startsWith("J")||names[name].startsWith("j")){
+		console.log("Good Bye "+names[name]);
+	}
+	else{
+		console.log("Hello "+names[name]);
+	}
 }
